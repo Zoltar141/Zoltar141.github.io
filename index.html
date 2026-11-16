@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student developer portfolio">
-    <title>Student Name | Developer Portfolio</title>
+    <meta name="description" content="Robb Tucker Developer Portfolio">
+    <title>Robb Tucker | Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrapper">
-            <a class="site-title" href="#home">Student Name</a>
+            <a class="site-title" href="#home">Robb Tucker</a>
             <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
@@ -26,10 +26,13 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div>
-                    <p class="eyebrow">Student Developer Portfolio</p>
-                    <h1>Hello, I’m <span>Student Name</span>.</h1>
+                    <p class="eyebrow">Robb Tucker Portfolio</p>
+                    <h1>Hello, I’m <span>Robb</span>.</h1>
                     <p class="hero-text">
-                        Replace this paragraph with a short professional introduction. Explain what kind of developer you are becoming, what you enjoy building, and what you hope to do next.
+                        I'm a game developer focused on building creative, scalable systems and interactive experiences. 
+                        I enjoy exploring the intersection of programming, game design, and procedural generation, with 
+                        an emphasis on developing flexible tools that empower creativity. I'm currently pursuing a 
+                        bachelor's degree in Game Design at Full Sail University.
                     </p>
                     <div class="button-row">
                         <a class="button primary" href="#projects">View My Projects</a>
@@ -37,7 +40,7 @@
                     </div>
                 </div>
 
-                <img class="profile-image" src="images/profile-placeholder.svg" alt="Placeholder profile illustration">
+                <img class="profile-image" src="images/me.jpg" alt="Placeholder profile illustration">
             </div>
         </section>
 
@@ -46,23 +49,33 @@
                 <p class="section-label">About Me</p>
                 <h2>Who I Am as a Developer</h2>
                 <p>
-                    Replace this paragraph with your developer story. You might discuss what led you to programming, the types of problems you enjoy solving, and how your skills have grown during the program.
+                    My path into programming started with a love for video games and an interest in understanding how things 
+                    work behind the scenes. As I began learning to code, I found that I enjoyed more than just making things work. 
+                    I liked breaking down complicated problems, experimenting with different approaches, and finding ways to make 
+                    systems work together. Through my education at Full Sail University, I've developed a stronger foundation in 
+                    programming, software architecture, and game development. Projects like Wonkle have given me the opportunity
+                    to take what I've learned and apply it to larger challenges, pushing me to think beyond individual features 
+                    and focus  on how entire systems are designed.
                 </p>
 
                 <div class="skills-grid">
                     <article class="info-card">
                         <h3>Languages</h3>
-                        <p>C++, HTML, CSS</p>
+                        <p>C++, HTML, CSS, GDScript, Blueprint Visual Scripting</p>
                     </article>
 
                     <article class="info-card">
                         <h3>Tools</h3>
-                        <p>Visual Studio, Git, GitHub</p>
+                        <p>
+                            Visual Studio, Visual Studio Code, Git, GitHub, CMake, PowerShell,
+                            MSYS2, Unreal Engine, Godot, GameMaker, Blender, Audacity, OBS, Photoshop, Microsoft
+                            Office
+                        </p>
                     </article>
 
                     <article class="info-card">
                         <h3>Current Focus</h3>
-                        <p>Object-oriented programming, debugging, and clean code</p>
+                        <p>Object-oriented programming, debugging, modular scalable systems that prioritize flexibility, and clean code</p>
                     </article>
                 </div>
             </div>
@@ -70,32 +83,52 @@
 
         <section id="projects" class="section alternate-background">
             <div class="container">
-                <p class="section-label">Featured Work</p>
+                <p class="section-label">Behold, My Stuff</p>
                 <h2>Projects</h2>
                 <p class="section-intro">
-                    Replace the sample information below with your own work. Add screenshots, explain what each project does, and describe your development process.
+                    A collection of projects, experiments, and ideas I've brought to life through code. 
+                    Each one represents something I've built, learned, broken, fixed, and improved along the way.
                 </p>
 
                 <div class="project-grid">
                     <article class="project-card">
-                        <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project One">
+                        <img src="images/wonkle.png" alt="Placeholder screenshot for Project One">
                         <div class="project-content">
                             <p class="project-type">C++ Console Application</p>
-                            <h3>Project One Title</h3>
+                            <h3>W.O.N.K.L.E. v.1</h3>
                             <p>
-                                Write a brief overview of the project. Explain the purpose of the program and what the user can do with it.
+                                Wonkle is a tool designed to make building systems easier by letting users create rules and 
+                                decide how different parts of a program behave without having to write new code every time. 
+                                Instead of programming every action directly into the software, Wonkle uses external files
+                                to store instructions that tell it what to do. This makes it easier to change, reuse, and 
+                                expand projects without rebuilding everything from scratch. While I'm currently testing it 
+                                through game development, the goal is to make Wonkle useful for much more than just games.
                             </p>
 
                             <h4>Key Features</h4>
                             <ul>
-                                <li>Describe one major feature.</li>
-                                <li>Describe another major feature.</li>
-                                <li>Describe your input validation or menu system.</li>
+                                <li>File-Based Configuration: Wonkle uses external files to control how it works. 
+                                Instead of changing the program's code every time you want to try something new, 
+                                you can change the instructions in a file. This lets you experiment with different rules,
+                                behaviors, and setups while keeping the underlying program the same.</li>
+                                <li>Reusable Rules: Wonkle can use the same set of instructions across different projects. 
+                                This means you don't have to build the same functionality over and over. 
+                                You can reuse existing rules and adapt them to whatever you're creating.</li>
+                                <li>Menu System: Wonkle uses a menu system to let users navigate the program, 
+                                select games, and adjust settings. It's also where the save and load process will be handled.
+                                Before starting a game, the menu will check for existing save files and load the appropriate 
+                                data. This connects the menu with the GameState and game controllers, allowing progress and 
+                                settings to carry over between sessions.</li>
                             </ul>
 
                             <h4>What I Learned</h4>
                             <p>
-                                Explain one challenge you faced, how you solved it, and what you learned from the process.
+                                One of my biggest challenges was getting Wonkle to read and interpret JSON files correctly. 
+                                I wanted users to be able to control how the framework works through external files rather 
+                                than hardcoding everything. Getting the files to load, parsing their contents, and connecting 
+                                that data to the right parts of the program took a lot of troubleshooting. 
+                                I learned how important it is to separate data from code and how much planning goes into 
+                                building a system that can grow without constantly rewriting it.
                             </p>
 
                             <div class="project-links">
@@ -155,7 +188,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Student Name. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
+            <p>&copy; 2026 Robb Tucker. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
         </div>
     </footer>
 </body>
